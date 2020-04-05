@@ -13,6 +13,7 @@ public class TC5 {
 	
 	@Test(priority=5)
 	public void testcase5() throws IOException {
+		System.out.println("Test Changes in GIT");
 		Properties pr=PropertiesFileLoad.propertiesFile("../APIFrameworkPart/Env.Properties");
 		HTTPMethods http=new HTTPMethods(pr);
 		Response  res=http.GetRequest("QA_URI");
